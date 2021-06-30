@@ -1,0 +1,9 @@
+sceneSetups:
+- path: Assets/Pizza.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/ViveHandTracking/Sample/Sample.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0

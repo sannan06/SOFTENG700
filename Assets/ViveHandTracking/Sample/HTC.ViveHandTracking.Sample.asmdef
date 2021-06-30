@@ -1,0 +1,26 @@
+{
+    "name": "HTC.ViveHandTracking.Sample",
+    "references": [
+        "HTC.ViveHandTracking",
+        "Wave.Native"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.htc.upm.wave.native",
+            "expression": "",
+            "define": "VIVEHANDTRACKING_WAVEXR_HAND"
+        }
+    ],
+    "noEngineReferences": false
+}
