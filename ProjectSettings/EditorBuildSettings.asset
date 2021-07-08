@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Pizza.unity
     guid: 4ea6e87f1e1dc48998ea1ddb21629fdc
+  - enabled: 1
+    path: Assets/Linear Model.unity
+    guid: 69357f8d5078941b1a687cd1128cf5fd
   m_configObjects:
     com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: e1832b33f46fc44888f69150b40cce77,
       type: 2}
