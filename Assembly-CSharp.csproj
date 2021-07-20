@@ -39,9 +39,15 @@
      <Compile Include="Assets\AppleCounter.cs" />
      <Compile Include="Assets\GrabScript.cs" />
      <Compile Include="Assets\HandLaser.cs" />
+     <Compile Include="Assets\Pizza\CameraSwitcher.cs" />
+     <Compile Include="Assets\Pizza\Fraction.cs" />
+     <Compile Include="Assets\Pizza\PlayerTouch.cs" />
+     <Compile Include="Assets\Pizza\Slice.cs" />
+     <Compile Include="Assets\Pizza\SliceGroup.cs" />
+     <Compile Include="Assets\Pizza\Snap.cs" />
+     <Compile Include="Assets\Pizza\TouchTracker.cs" />
      <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
      <Compile Include="Assets\SceneChanger.cs" />
-     <Compile Include="Assets\Snap.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
