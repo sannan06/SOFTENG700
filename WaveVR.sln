@@ -1,27 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTC.ViveHandTracking", "HTC.ViveHandTracking.csproj", "{1319903d-3ac6-0919-7d58-30f59e94af96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTC.ViveHandTracking", "HTC.ViveHandTracking.csproj", "{3D901913-C63A-1909-7D58-30F59E94AF96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{9e883d1d-d46c-71d6-5e84-ca6706eb8a0b}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{1D3D889E-6CD4-D671-5E84-CA6706EB8A0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTC.ViveHandTracking.Sample", "HTC.ViveHandTracking.Sample.csproj", "{08476e61-ec87-4e5c-ebe9-4d82f4045f53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTC.ViveHandTracking.Sample", "HTC.ViveHandTracking.Sample.csproj", "{616E4708-87EC-5C4E-EBE9-4D82F4045F53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTC.ViveHandTracking.Editor", "HTC.ViveHandTracking.Editor.csproj", "{6659606e-f4ce-2860-fbad-27fb9126cccc}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTC.ViveHandTracking.Editor", "HTC.ViveHandTracking.Editor.csproj", "{6E605966-CEF4-6028-FBAD-27FB9126CCCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1319903d-3ac6-0919-7d58-30f59e94af96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1319903d-3ac6-0919-7d58-30f59e94af96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9e883d1d-d46c-71d6-5e84-ca6706eb8a0b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9e883d1d-d46c-71d6-5e84-ca6706eb8a0b}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08476e61-ec87-4e5c-ebe9-4d82f4045f53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08476e61-ec87-4e5c-ebe9-4d82f4045f53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6659606e-f4ce-2860-fbad-27fb9126cccc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6659606e-f4ce-2860-fbad-27fb9126cccc}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D901913-C63A-1909-7D58-30F59E94AF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D901913-C63A-1909-7D58-30F59E94AF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D901913-C63A-1909-7D58-30F59E94AF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D901913-C63A-1909-7D58-30F59E94AF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D3D889E-6CD4-D671-5E84-CA6706EB8A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D3D889E-6CD4-D671-5E84-CA6706EB8A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D3D889E-6CD4-D671-5E84-CA6706EB8A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D3D889E-6CD4-D671-5E84-CA6706EB8A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616E4708-87EC-5C4E-EBE9-4D82F4045F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616E4708-87EC-5C4E-EBE9-4D82F4045F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616E4708-87EC-5C4E-EBE9-4D82F4045F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616E4708-87EC-5C4E-EBE9-4D82F4045F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E605966-CEF4-6028-FBAD-27FB9126CCCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E605966-CEF4-6028-FBAD-27FB9126CCCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E605966-CEF4-6028-FBAD-27FB9126CCCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E605966-CEF4-6028-FBAD-27FB9126CCCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

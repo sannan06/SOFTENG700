@@ -43,9 +43,9 @@ public struct Fraction
         return a;
     }
 
-    public double ToDecimal()
+    public float ToDecimal()
     {
-        return numerator/denominator;
+        return ((float)numerator)/denominator;
     }
 
     public Fraction Reciprocal()
