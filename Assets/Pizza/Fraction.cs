@@ -43,6 +43,11 @@ public struct Fraction
         return a;
     }
 
+    public double ToDecimal()
+    {
+        return numerator/denominator;
+    }
+
     public Fraction Reciprocal()
     {
         return new Fraction(denominator, numerator);

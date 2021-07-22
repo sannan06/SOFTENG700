@@ -1,6 +1,7 @@
+using UnityEngine;
 using System.Collections.Generic;
 
-public class BlockGroup : MonoBehavior
+public class BlockGroup : MonoBehaviour
 {
     private List<BlockRow> rows;
 
@@ -11,17 +12,25 @@ public class BlockGroup : MonoBehavior
         // Create 1 row with 1/1 block
     }
 
-    void AddBlock()
+    void AddBlock(Block block)
     {
-        // For Row row : rows
-            // If row is not full
-                // If row.currentTotal + block.value < 1
+        bool insertedBlock = false;
+        foreach (BlockRow row in rows)
+        {
+            if (!row.IsFull())
+            {
+                if (row.CanFitBlock(block))
+                {
                     // Get max position of row
                     // Add block to that position
-                // End if
-            // End if
-        // End for
+                    // Add block as child of that row
+                }
+            }
+        }
 
-        // If no existing Row could fit block, create new Row
+        if (!insertedBlock)
+        {
+            // If no existing Row could fit block, create new Row
+        }
     }
 }
