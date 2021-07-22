@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\AppleCounter.cs" />
+     <Compile Include="Assets\Blocks\Block.cs" />
      <Compile Include="Assets\GrabScript.cs" />
      <Compile Include="Assets\HandLaser.cs" />
      <Compile Include="Assets\Pizza\Fraction.cs" />
