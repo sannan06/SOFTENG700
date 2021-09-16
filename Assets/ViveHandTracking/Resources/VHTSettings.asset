@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9048560199102516280
+--- !u!114 &-7126711159060426494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: ViveHandTrackingEngine
-  m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:ViveHandTrackingEngine
+  m_Script: {fileID: 11500000, guid: f55beacf3103d0c4ab6f68a6b10d57f3, type: 3}
+  m_Name: EditorEngine
+  m_EditorClassIdentifier: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21,14 +21,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 4a35e217f6f744345aa953f798bc4fb9, type: 3}
   m_Name: VHTSettings
-  m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:VHTSettings
+  m_EditorClassIdentifier: 
   Engines:
-  - {fileID: -9048560199102516280}
-  - {fileID: 689101304936942739}
-  - {fileID: 1539950354835570849}
---- !u!114 &689101304936942739
+  - {fileID: 858295180994024212}
+  - {fileID: 320344446111125708}
+  - {fileID: -7126711159060426494}
+--- !u!114 &320344446111125708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,10 +37,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 6e66b6467e7c1494c94f9c1720d94d5e, type: 3}
   m_Name: WaveVRHandEngine
-  m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:WaveVRHandEngine
---- !u!114 &1539950354835570849
+  m_EditorClassIdentifier: 
+--- !u!114 &858295180994024212
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,6 +49,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: EditorEngine
-  m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:EditorEngine
+  m_Script: {fileID: 11500000, guid: 941676a17cfcd324298ae04b286e8680, type: 3}
+  m_Name: ViveHandTrackingEngine
+  m_EditorClassIdentifier: 

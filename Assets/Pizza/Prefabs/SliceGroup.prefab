@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7722910143699988676}
   - component: {fileID: -9068755531760508915}
   - component: {fileID: 228897405296507160}
+  - component: {fileID: 8400124364505365789}
   m_Layer: 10
   m_Name: SliceGroup
   m_TagString: Untagged
@@ -46,6 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 7722910143950665846}
+  fraction:
+    numerator: 0
+    denominator: 1
 --- !u!54 &228897405296507160
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -62,6 +66,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8400124364505365789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7722910143699988675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d5eb8408c882444978f32d77b3eff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchTracker: {fileID: 11400000, guid: 58c1b962911959a488ed55895e3609e3, type: 2}
+  sliceGroupPrefab: {fileID: -9068755531760508915}
 --- !u!1 &7722910143950665844
 GameObject:
   m_ObjectHideFlags: 0

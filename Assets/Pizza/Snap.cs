@@ -6,7 +6,7 @@ public class Snap : MonoBehaviour
 {
     public TouchTracker touchTracker;
 
-    public SliceGroup sliceGroupPrefab;
+    public Transform sliceGroupPrefab;
 
     private int sliceLayer;
 
@@ -15,43 +15,58 @@ public class Snap : MonoBehaviour
         sliceLayer = LayerMask.NameToLayer("Pizza");
     }
 
+    
+
     void OnCollisionEnter(Collision other)
     {
-
         // if collision is not with a pizza slice, ignore the collision
         if(other.gameObject.layer != sliceLayer) {
-            Debug.Log($"Not in slice layer");
-
             return;
         }
 
-        // if collision occurs not due to the user pushing the slice, ignore the collision
-        // if(touchTracker.lastTouched != gameObject) {
-        //     Debug.Log($"Not touched gameObject");
+        // Get the slice group that this slice is in
+        SliceGroup thisGroup = transform.GetComponent<SliceGroup>() ?? transform.parent.GetComponent<SliceGroup>();
+        // Get the slice group of the other object
+        SliceGroup otherGroup = other.transform.GetComponent<SliceGroup>() ?? other.transform.parent.GetComponent<SliceGroup>();
 
-        //     return;
-        // }
-
-        // if slice being pushed around is currently in a group, ignore the collision,
-        if(transform.parent.GetComponent<SliceGroup>() != null) {
-            Debug.Log($"Already has parent group");
-
+        // if they belong to the same slice group, dont need to do anything
+        if(thisGroup != null && thisGroup == otherGroup) {
             return;
         }
 
-        // get slice group of other group
-        SliceGroup group = other.transform.GetComponent<SliceGroup>();
+        Debug.Log($"Collision between {this.transform.name} and {other.transform.name}");
+
+        var sum = thisGroup == null ? GetComponent<Slice>().fraction : thisGroup.fraction;
+        sum += otherGroup == null ? other.transform.GetComponent<Slice>().fraction : otherGroup.fraction;
+
+        Debug.Log($"Sum is ${sum.numerator}/{sum.denominator}");
+
+        if(sum.numerator > sum.denominator) {
+            // greater than 1
+            return;
+        }
         
         // if other slice dosent belong to a group, make one.
-        if(group == null) {
-            
-            group = Instantiate(sliceGroupPrefab, other.transform.position, other.transform.rotation);
+        if(otherGroup == null) {
 
-            group.AddSlice(other.transform.GetComponent<Slice>());
+            otherGroup = Instantiate(sliceGroupPrefab, other.transform.position, other.transform.rotation).GetComponent<SliceGroup>();
+            
+            otherGroup.AddSlice(other.transform.GetComponent<Slice>());
+
         }
 
-        group.AddSlice(GetComponent<Slice>());
+        if(thisGroup != null) {
+
+            otherGroup.AddSliceGroup(thisGroup);
+
+            Destroy(thisGroup.gameObject);
+
+        } else {
+            otherGroup.AddSlice(GetComponent<Slice>());
+        }
 
         touchTracker.setLastTouched(null);
     }
+
+
 }

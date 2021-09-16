@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touchTracker: {fileID: 11400000, guid: 58c1b962911959a488ed55895e3609e3, type: 2}
-  sliceGroupPrefab: {fileID: -9068755531760508915, guid: 225c84b9ced9b5b418e5d517c2f16bb0,
+  sliceGroupPrefab: {fileID: 7722910143699988676, guid: 225c84b9ced9b5b418e5d517c2f16bb0,
     type: 3}
 --- !u!54 &974176513986787122
 Rigidbody:

@@ -8,15 +8,11 @@ public class SliceGroup : MonoBehaviour {
     public TextMeshPro text;
     private List<Slice> slices;
 
-    private Fraction fraction = "0/1";
+    public Fraction fraction = "0/1";
 
     void Awake()
     {
         slices = new List<Slice>();
-
-        foreach (Transform slice in transform) {
-            AddSlice(slice.GetComponent<Slice>());
-        }
     }
 
     void Update()
@@ -25,11 +21,15 @@ public class SliceGroup : MonoBehaviour {
     }
 
     public void AddSlice(Slice slice) {
+
         if(slices.Contains(slice)) {
             return;
         }
 
+        Debug.Log(slice);
+
         Destroy(slice.GetComponent<Rigidbody>());
+        Destroy(slice.GetComponent<Snap>());
 
 
         slice.transform.parent = this.transform;
@@ -49,6 +49,14 @@ public class SliceGroup : MonoBehaviour {
         name = $"SliceGroup: {fraction}";
 
         text.SetText(fraction.ToString());
+
+
+    }
+
+    public void AddSliceGroup(SliceGroup sliceGroup) {
+        foreach(Slice slice in sliceGroup.slices) {
+            AddSlice(slice);
+        }
     }
 
     // public static SliceGroup CreateSliceGroup(Vector3 position, Quaternion rotation) {
