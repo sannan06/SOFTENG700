@@ -3,15 +3,6 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Block
     - BlockGroup
-    - BlockRow
-    HTC.ViveHandTracking.dll:
-    - ViveHandTracking.EditorEngine
-    - ViveHandTracking.GestureProvider
-    - ViveHandTracking.HandInputModule
-    - ViveHandTracking.HandRenderer
-    - ViveHandTracking.VHTSettings
-    - ViveHandTracking.ViveHandTrackingEngine
-    - ViveHandTracking.WaveVRHandEngine
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -41,7 +32,7 @@ ScriptsOnlyBuild:
     - Wave.XR.Loader.WaveXRLoader
     - Wave.XR.Settings.WaveXRSettings
   sceneClasses:
-    Assets/Linear Model.unity:
+    Assets/Linear Model (Controller).unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -72,53 +63,49 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11386}
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11602}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 12040}
     - Class: 114
-      Script: {instanceID: 12128}
+      Script: {instanceID: 12130}
     - Class: 114
-      Script: {instanceID: 12162}
+      Script: {instanceID: 12164}
     - Class: 114
-      Script: {instanceID: 12332}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 12424}
+      Script: {instanceID: 12690}
     - Class: 114
-      Script: {instanceID: 12686}
+      Script: {instanceID: 12920}
     - Class: 114
-      Script: {instanceID: 12826}
+      Script: {instanceID: 12938}
     - Class: 114
-      Script: {instanceID: 12914}
+      Script: {instanceID: 13122}
     - Class: 114
-      Script: {instanceID: 12932}
+      Script: {instanceID: 13160}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13422}
     - Class: 114
-      Script: {instanceID: 13154}
+      Script: {instanceID: 13574}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13634}
     - Class: 114
-      Script: {instanceID: 13568}
-    - Class: 114
-      Script: {instanceID: 13654}
-    - Class: 114
-      Script: {instanceID: 13714}
-    - Class: 114
-      Script: {instanceID: 14662}
-    - Class: 114
-      Script: {instanceID: 15078}
-    - Class: 114
-      Script: {instanceID: 15080}
+      Script: {instanceID: 13662}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -139,6 +126,12 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -149,12 +142,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
-  - hash:
-      serializedVersion: 2
-      Hash: ffe7a172d4d00820ba1500f2ee83de13
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: HandDisplaySwitch
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -173,18 +160,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TouchTracker
-  - hash:
-      serializedVersion: 2
-      Hash: 9b8b4244070a3098126315fad0eb23e9
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: ModelRenderer
-  - hash:
-      serializedVersion: 2
-      Hash: 55f3330aefc46870debc7d8f48eefd1d
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: CustomGestureProvider
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -223,12 +198,6 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: ViveHandTrackingEngine
-  - hash:
-      serializedVersion: 2
       Hash: 499fd23433e68e265d153aa6b95d0047
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -253,12 +222,6 @@ ScriptsOnlyBuild:
     className: XRGeneralSettings
   - hash:
       serializedVersion: 2
-      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Wave.Essence.dll
     namespaceName: Wave.Essence.Editor
@@ -275,12 +238,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: Grab
   - hash:
       serializedVersion: 2
       Hash: 234d407605354852c48e57df17c9a1c6
@@ -305,12 +262,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 47e19d681fd5ae696d69b522d331e8b6
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: DualHandGestureProducer
   - hash:
       serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
@@ -341,12 +292,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
-  - hash:
-      serializedVersion: 2
-      Hash: ece401e3fba3aeee6991ab292d44ea64
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: Laser
   - hash:
       serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
@@ -409,12 +354,6 @@ ScriptsOnlyBuild:
     className: Snap
   - hash:
       serializedVersion: 2
-      Hash: 0269c243220d05905398780d728395cf
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: Draw
-  - hash:
-      serializedVersion: 2
       Hash: 5f170942ee57c7a568f5bcfc7521adea
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -439,6 +378,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
+      Hash: 299d64ecbc81f86ff78922be3622e30f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Block
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -451,46 +396,16 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 208c343fc2d825f1b50d9795689709db
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: JointRotationRenderer
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Wave.Native.dll
     namespaceName: Wave.Native
     className: WVR_EditorImpl
   - hash:
       serializedVersion: 2
-      Hash: 159f3ee86c6c2908dbb4e93f6f62968f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: ViveHandTracking.Sample
-    className: GrabScript
-  - hash:
-      serializedVersion: 2
       Hash: b270f1a0f6db118a9ae9c5ca1b3b495a
     assemblyName: Wave.Essence.dll
     namespaceName: Wave.Essence.Editor
     className: DummyButton
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: WaveVRHandEngine
-  - hash:
-      serializedVersion: 2
-      Hash: 7e9087a6fe801df2711df5a2ea6bf7ef
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: RemoteGrab
-  - hash:
-      serializedVersion: 2
-      Hash: 020c9c074fc5ac8b0bc517b2568f5d59
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: ObjectFactory
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -505,12 +420,6 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 56fc8c88522abeb5e5ac99644613044e
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: VHTSettings
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -521,12 +430,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerTouch
-  - hash:
-      serializedVersion: 2
-      Hash: fe5a6fc508980841d35a517262a3d9d5
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: HandInputRayPointer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -559,18 +462,6 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 6a2ece2bce3a5c72664bad5a32fec8f8
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: HandInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: ece401e3fba3aeee6991ab292d44ea64
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: PinchLaser
-  - hash:
-      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -589,40 +480,22 @@ ScriptsOnlyBuild:
     className: DummyPoseProvider
   - hash:
       serializedVersion: 2
-      Hash: 7bb3115704fd3b61b57afcf83752873d
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: HandRenderer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: CameraHeight
-  - hash:
-      serializedVersion: 2
       Hash: f64fd37da5cb89243ec68b5026d70bb8
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlockRow
+  - hash:
+      serializedVersion: 2
       Hash: c9a8b80298a116835b51ba1cf9284367
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
-  - hash:
-      serializedVersion: 2
-      Hash: 4b27471e3f716e099800d3f7e89fd7fd
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: TriggerCallback
-  - hash:
-      serializedVersion: 2
-      Hash: ece401e3fba3aeee6991ab292d44ea64
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: ViveHandTracking.Sample
-    className: HandLaser
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -673,18 +546,6 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 977011d065eb0ab6be7ebbc9c5476cf3
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: ShowViveLogo
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: PushColor
-  - hash:
-      serializedVersion: 2
       Hash: 24c74cc0d527a06113f2b967042769f0
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEditor.XR.LegacyInputHelpers
@@ -701,12 +562,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
-  - hash:
-      serializedVersion: 2
-      Hash: bdee625372ff24ea11c92bdc66fb3c27
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: SingleHandGestureProducer
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -734,27 +589,9 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: DisableController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Wave.Essence.dll
     namespaceName: Wave.Essence
     className: WaveEssence
-  - hash:
-      serializedVersion: 2
-      Hash: 1abb5364164f5da2296f7eb467834ea3
-    assemblyName: HTC.ViveHandTracking.Sample.dll
-    namespaceName: ViveHandTracking.Sample
-    className: ShowCustomGestureInfo
-  - hash:
-      serializedVersion: 2
-      Hash: f973b98d115885bad817bce4d62cc62f
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: EditorHandSimulator
   - hash:
       serializedVersion: 2
       Hash: 893dbdbfe611d62e230a686ea89f1efd
@@ -799,12 +636,6 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: b5657e5f760d148ab6d313cfc4906e67
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: GestureProvider
-  - hash:
-      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -823,12 +654,6 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 29aa11d547e5d3dc00ca4393edde7385
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: HandStateChecker
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
@@ -839,6 +664,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Management.dll
     namespaceName: UnityEngine.XR.Management
     className: XRManagerSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 6395467306fa262e4306d2d4797e1df0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlockGroup
   - hash:
       serializedVersion: 2
       Hash: 9726bc46e15d44429bd38fb013657f1e
@@ -895,35 +726,11 @@ ScriptsOnlyBuild:
     className: QuitApplication
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: HTC.ViveHandTracking.dll
-    namespaceName: ViveHandTracking
-    className: EditorEngine
-  - hash:
-      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 299d64ecbc81f86ff78922be3622e30f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Block
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BlockRow
-  - hash:
-      serializedVersion: 2
-      Hash: 6395467306fa262e4306d2d4797e1df0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BlockGroup
   platform: 13
   scenePathNames:
-  - Assets/Linear Model.unity
+  - Assets/Linear Model (Controller).unity
   playerPath: /Users/sannanhafeez/WaveVR/test.apk
