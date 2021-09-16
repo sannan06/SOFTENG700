@@ -852,7 +852,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524837998}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -902,7 +902,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664675526}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1142,6 +1142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b621e81af98344eb4180761d085142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handInput: {fileID: 0}
+  dragThreshold: 0.2
 --- !u!114 &796110462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1386,6 +1388,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44c54be549d59d4e8b67674d9d2e3b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  option:
+    backend: 0
+    mode: 2
+    maxFPS: 90
+  autoRestart: 1
 --- !u!114 &922783049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,6 +1492,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0d651f58dfa49b1811ee0e718eab73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockPrefab: {fileID: 9051180804315888141, guid: 9787b3065325347c9b9908bfbd114413,
+    type: 3}
+  rowPrefab: {fileID: 8210922371275831760, guid: e6b32fd36e9ed4eda983457a261d83c6,
+    type: 3}
 --- !u!4 &1136680024
 Transform:
   m_ObjectHideFlags: 0
