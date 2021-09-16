@@ -1,8 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Block
-    - BlockGroup
+    - PlayerTouch
+    - Slice
+    - SliceGroup
+    - Snap
+    - TouchTracker
+    - ViveHandTracking.Sample.GrabScript
+    - ViveHandTracking.Sample.HandLaser
+    HTC.ViveHandTracking.dll:
+    - ViveHandTracking.EditorEngine
+    - ViveHandTracking.GestureProvider
+    - ViveHandTracking.HandInputModule
+    - ViveHandTracking.HandRenderer
+    - ViveHandTracking.HandStateChecker
+    - ViveHandTracking.VHTSettings
+    - ViveHandTracking.ViveHandTrackingEngine
+    - ViveHandTracking.WaveVRHandEngine
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -10,6 +24,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
@@ -25,6 +40,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     UnityEngine.XR.LegacyInputHelpers.dll:
     - UnityEditor.XR.LegacyInputHelpers.CameraOffset
@@ -32,7 +48,7 @@ ScriptsOnlyBuild:
     - Wave.XR.Loader.WaveXRLoader
     - Wave.XR.Settings.WaveXRSettings
   sceneClasses:
-    Assets/Linear Model (Controller).unity:
+    Assets/Area Model.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -72,36 +88,62 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 0}
+      Script: {instanceID: 11386}
     - Class: 114
-      Script: {instanceID: 11388}
+      Script: {instanceID: 11406}
     - Class: 114
-      Script: {instanceID: 12040}
+      Script: {instanceID: 11468}
     - Class: 114
-      Script: {instanceID: 12130}
+      Script: {instanceID: 11602}
     - Class: 114
-      Script: {instanceID: 12164}
+      Script: {instanceID: 12026}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12038}
     - Class: 114
-      Script: {instanceID: 12690}
+      Script: {instanceID: 12074}
     - Class: 114
-      Script: {instanceID: 12920}
+      Script: {instanceID: 12128}
     - Class: 114
-      Script: {instanceID: 12938}
+      Script: {instanceID: 12162}
     - Class: 114
-      Script: {instanceID: 13122}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 13160}
+      Script: {instanceID: 12334}
     - Class: 114
-      Script: {instanceID: 13422}
+      Script: {instanceID: 12426}
     - Class: 114
-      Script: {instanceID: 13574}
+      Script: {instanceID: 12490}
     - Class: 114
-      Script: {instanceID: 13634}
+      Script: {instanceID: 12688}
     - Class: 114
-      Script: {instanceID: 13662}
+      Script: {instanceID: 12828}
+    - Class: 114
+      Script: {instanceID: 12902}
+    - Class: 114
+      Script: {instanceID: 12918}
+    - Class: 114
+      Script: {instanceID: 12936}
+    - Class: 114
+      Script: {instanceID: 13120}
+    - Class: 114
+      Script: {instanceID: 13158}
+    - Class: 114
+      Script: {instanceID: 13228}
+    - Class: 114
+      Script: {instanceID: 13420}
+    - Class: 114
+      Script: {instanceID: 13530}
+    - Class: 114
+      Script: {instanceID: 13572}
+    - Class: 114
+      Script: {instanceID: 13624}
+    - Class: 114
+      Script: {instanceID: 13660}
+    - Class: 114
+      Script: {instanceID: 13720}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -732,5 +774,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Linear Model (Controller).unity
+  - Assets/Area Model.unity
   playerPath: /Users/sannanhafeez/WaveVR/test.apk

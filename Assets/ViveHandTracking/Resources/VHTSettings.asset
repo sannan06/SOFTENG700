@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5566854426948132074
+--- !u!114 &-9048560199102516280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,30 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: ViveHandTrackingEngine
   m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:ViveHandTrackingEngine
---- !u!114 &-2237283568551056621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: EditorEngine
-  m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:EditorEngine
---- !u!114 &-1317325374681650788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: WaveVRHandEngine
-  m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:WaveVRHandEngine
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,6 +25,30 @@ MonoBehaviour:
   m_Name: VHTSettings
   m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:VHTSettings
   Engines:
-  - {fileID: -5566854426948132074}
-  - {fileID: -1317325374681650788}
-  - {fileID: -2237283568551056621}
+  - {fileID: -9048560199102516280}
+  - {fileID: 689101304936942739}
+  - {fileID: 1539950354835570849}
+--- !u!114 &689101304936942739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: WaveVRHandEngine
+  m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:WaveVRHandEngine
+--- !u!114 &1539950354835570849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: EditorEngine
+  m_EditorClassIdentifier: HTC.ViveHandTracking:ViveHandTracking:EditorEngine
