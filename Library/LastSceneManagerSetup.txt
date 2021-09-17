@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Area Model (Controller).unity
+- path: Assets/Linear Model (Controller).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
