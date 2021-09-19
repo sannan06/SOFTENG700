@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Set Model.unity
     guid: 4ea6e87f1e1dc48998ea1ddb21629fdc
-  - enabled: 0
+  - enabled: 1
     path: Assets/Area Model.unity
     guid: 9c0d9ebf8ca42f442914b68bbca6e597
   - enabled: 0
@@ -23,9 +23,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Set Model (Controller).unity
     guid: c233ec28ec5d34453a68c2c6cfc76b9c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Area Model (Controller).unity
     guid: d7c70895345bc40608855dfabc747193
+  - enabled: 0
+    path: Assets/Acclimitisation (Controller).unity
+    guid: 8f90fc4c6591a490f83980a445d124f2
+  - enabled: 0
+    path: Assets/Linear Model.unity
+    guid: 7e9dd7154bc274e9dbd956cdbb607e14
+  - enabled: 0
+    path: Assets/Acclimitisation.unity
+    guid: 1dd8b73de854d4afba4aa782b837606d
   m_configObjects:
     com.htc.upm.wave.xrsdk.xrsettings: {fileID: 11400000, guid: e1832b33f46fc44888f69150b40cce77,
       type: 2}
